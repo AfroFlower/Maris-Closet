@@ -16,11 +16,11 @@
 // Parameters:
 // zip: zip code
  
-// The below code fills in the first row of the table
+// The below code is for the weather api. Below has ORLANDO hard-coded for the project
 //  var city = "USER INPUT HERE"
- var zip = "&zip=32817,";
+//  var zip = "&zip=32817,";
 var apiKey = "&appid=809719346cfc3a45574c551cf515962c"
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + "Orlando" + zip + apiKey;
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + "Orlando" + apiKey;
 console.log(queryURL)
 
  $.ajax({
