@@ -5,8 +5,13 @@
 //  var city = "USER INPUT HERE"
 //  var zip = "&zip=32817,";
 var apiKey = "&appid=809719346cfc3a45574c551cf515962c"
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Orlando,Florida" + apiKey;
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Orlando,Florida&units=imperial" + apiKey;
 console.log(queryURL)
+
+// Hint: To convert from Kelvin to Fahrenheit: F = (K - 273.15) * 1.80 + 32
+
+// var temp = F * (K - 273.15) * 1.80 + 32
+
 
  $.ajax({
    url: queryURL,
