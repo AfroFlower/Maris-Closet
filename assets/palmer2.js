@@ -24,7 +24,7 @@ console.log(queryURL)
     var weather = response.main.temp;
     console.log(weather)
 
-// Check Weather API.
+// Check Weather API. (above)
 
   var weather = {
       cold: 60 + "º",
@@ -36,6 +36,25 @@ console.log(queryURL)
 
     // console.log('%c Actual Tempature', 'color: white; font-weight: bold; background: black;');
 
+    // these returns put the shirt into the cold  or hot array
+    // the "objects" are for my other team members and the arrays they created
+  if (weather = weather.cold) {
+    temp = false;
+    return object.longSleevedShirt;
+  } else if (weather.hot){
+    temp = true;
+    return object.shortSleevedShirt;
+  };
+
+    // these returns put the shoes into the wet or dry array
+  if (weather = weather.wet) {
+    rain = false;
+    return object.shoesSandels
+  } else if (weather = weather.dry){
+    rain = true;
+    return object.shoesSneakers
+  };
+
 // Determan if weather is cold or hot. (This will let us know whether 
 // the outfit can have long or short length clothing.)
 
@@ -43,18 +62,6 @@ console.log(queryURL)
 // outfit can have shoes that cannot get wet or shoes that can get wet.)
   
 // These determaning factors should be bullions.
-
-  if (weather = weather.cold) {
-    temp = false;
-  } else if (weather.hot){
-    temp = true;
-  };
-
-  if (weather = weather.wet) {
-    rain = false;
-  } else if (weather = weather.dry){
-    rain = true;
-  };
 
 // If weather is cold leave temp to false.
 // Else if weather is hot set temp to true.
