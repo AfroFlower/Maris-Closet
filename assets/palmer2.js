@@ -22,38 +22,38 @@ console.log(queryURL)
     // $("#rain").text("Chance of Rain: " + response.weather[0].id "%");
 
     var weather = response.main.temp;
-    // console.log(weather)
+    console.log(weather)
 
 // Check Weather API.
 
-  // var weather = {
-  //     cold: 60 + "º",
-  //     warm: 75 + "º",
-  //     hot: 80 + "º"
-  //   };
+  var weather = {
+      cold: 60 + "º",
+      warm: 75 + "º",
+      hot: 80 + "º"
+    };
 
-    // console.log('%c Tempature', 'color: white; font-weight: bold; background: black;');
-    // console.table([weather]);
+    // console.log('%c Actual Tempature', 'color: white; font-weight: bold; background: black;');
 
 // Determan if weather is cold or hot. (This will let us know whether 
 // the outfit can have long or short length clothing.)
-
-    var rain = 501;
-
-  if (response.weather[0].id = rain) {
-    console.log(response.weather[0].id = rain)
-
-  }; 
-  
-  // if (weather === weather.warm) {
-  //   console.log(weather.warm)
-
-  // };
 
 // Determan weather it is not raining or it is raining. (This will let us know whether the 
 // outfit can have shoes that cannot get wet or shoes that can get wet.)
   
 // These determaning factors should be bullions.
+
+  if (weather = weather.cold) {
+    temp = false;
+  } else {
+    temp = true;
+  };
+
+  // if (weather = rain) {
+  //   wet = false;
+  // } else {
+  //   wet = true;
+  // };
+
 // If weather is cold leave temp to false.
 // Else if weather is hot set temp to true.
 // If not raining leave wet to false.
