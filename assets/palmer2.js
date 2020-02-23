@@ -29,7 +29,9 @@ console.log(queryURL)
   var weather = {
       cold: 60 + "º",
       warm: 75 + "º",
-      hot: 80 + "º"
+      hot: 80 + "º",
+      wet: false,
+      dry: true
     };
 
     // console.log('%c Actual Tempature', 'color: white; font-weight: bold; background: black;');
@@ -44,15 +46,15 @@ console.log(queryURL)
 
   if (weather = weather.cold) {
     temp = false;
-  } else {
+  } else if (weather.hot){
     temp = true;
   };
 
-  // if (weather = rain) {
-  //   wet = false;
-  // } else {
-  //   wet = true;
-  // };
+  if (weather = weather.wet) {
+    rain = false;
+  } else if (weather = weather.dry){
+    rain = true;
+  };
 
 // If weather is cold leave temp to false.
 // Else if weather is hot set temp to true.
