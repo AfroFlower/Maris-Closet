@@ -1,0 +1,31 @@
+mari's closet - input section
+
+Paragraph explaining this feature.
+<p> Organize your closet! Let us know what clothes you have. We will sort it out.
+button to initiate process
+<button> START
+
+when they click the start button ...
+
+first get image from user by enabling them to upload image.
+Paragraph explaining this.
+<p> Take a clear picture of one item of clothing on top of solid (perferably white) background.
+
+after picture is uploaded ask the following
+- What type of item is this?
+top, bottom, shoes
+- What occasions?
+casual, business, formal
+- What color is this?
+red, orange, yellow, green, blue, purple, black
+	if top also ask ...
+	- Sleeve length?
+	short, long
+if bottom also ask ...
+- Length?
+shorts, pants
+	if shoes also ask ...
+	- can these get wet?
+	no, yes
+Create an object. Put picture and answers in object. Add object to which ever array matchs answer "What type of item is this".
+There should be a tops array, bottoms array, and shoe array. 
