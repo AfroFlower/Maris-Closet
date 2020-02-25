@@ -21,40 +21,27 @@ console.log(queryURL)
     $("#tempature").text("Tempature: " + response.main.temp + "º");
     // $("#rain").text("Chance of Rain: " + response.weather[0].id "%");
 
-    var weather = response.main.temp;
-    console.log(weather)
+    var weatherTempature = response.main.temp;
+    console.log(weatherTempature)
 
 // Check Weather API. (above)
-
-  var weather = {
-      cold: 60 + "º",
-      warm: 75 + "º",
-      hot: 80 + "º",
-      wet: false,
-      dry: true
-    };
+  var checkTemp = {
+    cold: weatherTempature + "50-60",
+    hot: weatherTempature + "75-90"
+  }
 
     // console.log('%c Actual Tempature', 'color: white; font-weight: bold; background: black;');
 
     // these returns put the shirt into the cold  or hot array
     // the "objects" are for my other team members and the arrays they created
-  if (weather = weather.cold) {
-    temp = false;
-    return object.longSleevedShirt;
-  } else if (weather.hot){
-    temp = true;
-    return object.shortSleevedShirt;
-  };
+  if (checkTemp === cold) {
+    
+  } else {
+    
+  }
 
-    // these returns put the shoes into the wet or dry array
-  if (weather = weather.wet) {
-    rain = false;
-    return object.shoesSandels
-  } else if (weather = weather.dry){
-    rain = true;
-    return object.shoesSneakers
-  };
-
+// these returns put the shoes into the wet or dry array
+  
 // Determan if weather is cold or hot. (This will let us know whether 
 // the outfit can have long or short length clothing.)
 
