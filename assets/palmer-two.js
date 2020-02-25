@@ -7,38 +7,44 @@
 var apiKey = "&appid=809719346cfc3a45574c551cf515962c"
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Orlando,Florida&units=imperial" + apiKey;
 console.log(queryURL)
+// create a new var called weather
+  var weather;
 
  $.ajax({
    url: queryURL,
    method: "GET"
  }).then(function(response){
 
-    console.log(response)
+   weather = response.weather[0].main;
+   
+   console.log(weather)
 
-    $("#city").text("City: " + response.name);
-    $("#humidity").text("Humidity: " + response.main.humidity + "%");
-    $("#sky").text("Sky: " + response.weather[0].description);
-    $("#tempature").text("Tempature: " + response.main.temp + "º");
-    // $("#rain").text("Chance of Rain: " + response.weather[0].id "%");
+//     $("#city").text("City: " + response.name);
+//     $("#humidity").text("Humidity: " + response.main.humidity + "%");
+//     $("#sky").text("Sky: " + response.weather[0].description);
+//     $("#tempature").text("Tempature: " + response.main.temp + "º");
+//     // $("#rain").text("Chance of Rain: " + response.weather[0].id "%");
 
-    var weatherTempature = response.main.temp;
-    console.log(weatherTempature)
+//     var weatherTempature = response.main.temp;
+//     console.log(weatherTempature)
+//     console.log(response.weather[0].description)
 
-// Check Weather API. (above)
-  var checkTemp = {
-    cold: weatherTempature + "50-60",
-    hot: weatherTempature + "75-90"
-  }
+
+// // Check Weather API. (above)
+//   var checkTemp = {
+//     cold: weatherTempature + "50-60",
+//     hot: weatherTempature + "75-90"
+//   }
 
     // console.log('%c Actual Tempature', 'color: white; font-weight: bold; background: black;');
 
     // these returns put the shirt into the cold  or hot array
     // the "objects" are for my other team members and the arrays they created
-  if (checkTemp === cold) {
+  // if (checkTemp === cold) {
     
-  } else {
+  // } else {
     
-  }
+  // }
 
 // these returns put the shoes into the wet or dry array
   

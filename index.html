@@ -4,33 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/palmer.css">
 
     <title>Mari's Closet</title>
 
 </head>
 <body>
 
-    <div class="container">
-        <div class="row bg-info text-center text-white">
-            <div class="col-md-12">
-                <h1>Today's Weather</h1>
-                <h2 id="city"></h2>
-                <h2 id="humidity"></h2>
-                <h2 id="sky"></h2>
-                <h2 id="tempature"></h2>
-            </div>
-        </div>
+    <div class="card mb">
+            <!-- <img src="pictures/hardwood.jpg" class="card-img-top" id="header" alt="hardwood"> -->
     </div>
 
-    <!-- <script src="./assets/palmer.js"></script> -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="./assets/palmer-two.js"></script>
+    <nav class="navbar navbar-expand-lg navbar bg-dark text-white">
+        <a class="navbar-brand text-white" href="#">Mari's Closet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Your Room <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Your Wardrobe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Your Fit</a>
+            </li>                    
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="#">Essentials</a>
+                <a class="dropdown-item text-white" href="#">Insparation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white" href="#">Local Help</a>
+                </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+
+<div class="container text-center">
+
+    <div class="row">
+        
+        <div class="col">
+            <h1>What occasion will this outfit be for?</h1>
+            <button type="button" class="btn btn-primary" id="btn-casual">Casual</button>
+            <button type="button" class="btn btn-primary" id="btn-business">Business</button>
+            <button type="button" class="btn btn-primary" id="btn-formal">Formal</button>
+        </div>
+
+        <div id="shoes">
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="assets/shoes.js"></script>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="assets/main.js"></script>
 
 </body>
 </html>
