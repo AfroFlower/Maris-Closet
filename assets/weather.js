@@ -24,26 +24,12 @@ navigator.geolocation.getCurrentPosition(function(p){
         var temp = parseInt(response.main.temp);
         console.log(temp);
 
-        // var hot = "70" <= temp;
-        // var cold = "65" >= temp;
-
-        // if (hot) {
-        //     (alert("its hot outside!"));
-        // } else if (cold) {
-        //     alert("its cold outside!");
-        // }
-
-        var hot = parseInt(70)
-        var cold = parseInt(65)
-
-        if (hot >= temp) {
-            (alert("its a bit hot outside!"));
+        // return as hot if the tempation of the current location is greater than 70
+        if (temp >= 70) {
+            alert("its hot outside!");
+        } else {
+            alert("its cold outside!");
         }
-
-        if (cold >= temp) {
-            (alert("its a bit cold outside!"));
-        }
-
     });
 
 }, function(e){
