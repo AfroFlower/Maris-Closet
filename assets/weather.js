@@ -5,7 +5,6 @@ navigator.geolocation.getCurrentPosition(function(p){
     geoLat = p.coords.latitude;
     geoLon = p.coords.longitude;
 
-    // navigator.geolocation.getCurrentPosition(function(p){ console.log(p)}, function(e){console.log(e)})
     var lat = geoLat;
     var lon = geoLon;
     // console.log(lat);
