@@ -69,7 +69,7 @@ item: "shirt",
 occasion: "business",
 lengthhh: "cold",
 color: "blue",
-neutral: true,
+neutral: false,
 }; 
 var top10 = {
 image: "https://img.ltwebstatic.com/images3_pi/2019/12/10/15759653993967f59704aa5b35e8247a3f6fd3bbe1_thumbnail_405x552.webp",
@@ -77,7 +77,7 @@ item: "shirt",
 occasion: "casual",
 lengthhh: "cold",
 color: "purple",
-neutral: true,
+neutral: false,
 }; 
 var top11 = {
 image: "https://img.ltwebstatic.com/images2_pi/2018/06/05/1528183672179344041_thumbnail_600x799.webp",
