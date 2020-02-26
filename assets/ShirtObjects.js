@@ -87,7 +87,7 @@ lengthhh: "hot",
 color: "black",
 neutral: true,
 }; 
-var top12s = {
+var top12 = {
 image: "https://img.ltwebstatic.com/images3_pi/2019/11/01/1572584527b47ab417b259db773d6b78aa26465a69_thumbnail_600x.webp",
 item: "shirt",
 occasion: "business",
