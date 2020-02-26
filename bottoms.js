@@ -94,10 +94,65 @@ function outfitBottom () {
     // go through the users bottoms
     for (var i = 0; i < usersBottoms.length; i++) {
 
+        // check if the occasion is FORMAL
+
         // if the bottoms match the chosen occasion ...
-        if (((usersBottoms[i].occasion === chosenOccasion)
+        if ((usersBottoms[i].occasion === chosenOccasion)
+        // and if the occasion is FORMAL ...
+        && (usersBottoms[i].occasion === "formal")
+        //  and the bottoms match the final top color ...
+        && ((usersBottoms[i].color === finalTop.color)
+        // or the bottoms are a neutral color ... 
+        || (usersBottoms[i].neutral === true))) {
+
+            // move matching bottoms to the options array
+            // (because all formal bottoms should be long)
+            optionsBottoms.push(usersBottoms[i]);
+
+            // randomly pick bottoms from options array
+            finalBottom = optionsBottoms[Math.floor(Math.random() * optionsBottoms.length)];
+
+            // console.log(optionsBottoms)
+
+        } 
+
+
+
+        // check if it is raining
+
+        // if the bottoms match the chosen occasion ...
+        else if (((usersBottoms[i].occasion === chosenOccasion)
         // and it is raining ...
         && (rain = "yes"))
+        // and if the bottom lengthhh is long ...
+        && (usersBottoms[i].occasion === "cold")
+        //  and the bottoms match the final top color ...
+        && ((usersBottoms[i].color === finalTop.color)
+        // or the bottoms are a neutral color ... 
+        || (usersBottoms[i].neutral === true) 
+        // or the bottoms are jeans ...
+        || (usersBottoms[i].denim === true))) {
+
+            // move matching bottoms to the options array
+            optionsBottoms.push(usersBottoms[i]);
+
+            // randomly pick bottoms from options array
+            finalBottom = optionsBottoms[Math.floor(Math.random() * optionsBottoms.length)];
+
+            // console.log(optionsBottoms)            
+
+        }
+
+
+
+        // check if the weather is cold
+
+        // or else if the bottoms matches the chosen occasion...
+        else if (((usersBottoms[i].occasion === chosenOccasion)
+        // and the bottoms matches the weather...
+        && (usersBottoms[i].lengthhh === temp))
+        // and if the bottom lengthhh is long ...
+        && (usersBottoms[i].occasion === "cold")  
         //  and the bottoms match the final top color ...
         && ((usersBottoms[i].color === finalTop.color)
         // or the bottoms are a neutral color ... 
@@ -105,25 +160,31 @@ function outfitBottom () {
         // or the bottoms are jeans ...
         || (usersBottoms[i].denim === true))) {
             
-            // since it is raining only long bottoms
-            if (usersBottoms[i].lengthhh === "cold") {
+            // move matching bottoms to the options array
+            optionsBottoms.push(usersBottoms[i]);
 
-                // move matching bottoms to the options array
-                optionsBottoms.push(usersBottoms[i]);
+            // randomly pick bottom from options array
+            finalBottom = optionsBottoms[Math.floor(Math.random() * optionsBottoms.length)];
 
-                // randomly pick bottoms from options array
-                finalBottom = optionsBottoms[Math.floor(Math.random() * optionsBottoms.length)];
-
-            }
+            // console.log(optionsBottoms) 
 
         }
 
-        // or else if the bottoms matches the chosen occasion and weather...
+
+
+        // check if the weather is hot
+
+        // or else if the bottoms matches the chosen occasion...
         else if (((usersBottoms[i].occasion === chosenOccasion)
-        // and it is not raining ...
+        // and the bottoms matches the weather...
         && (usersBottoms[i].lengthhh === temp))
+        // and if the bottom lengthhh is short ...
+        && (usersBottoms[i].occasion === "hot")  
+        //  and the bottoms match the final top color ...
         && ((usersBottoms[i].color === finalTop.color)
-        || (usersBottoms[i].neutral === true)
+        // or the bottoms are a neutral color ... 
+        || (usersBottoms[i].neutral === true) 
+        // or the bottoms are jeans ...
         || (usersBottoms[i].denim === true))) {
             
             // move matching bottoms to the options array
@@ -131,6 +192,8 @@ function outfitBottom () {
 
             // randomly pick bottom from options array
             finalBottom = optionsBottoms[Math.floor(Math.random() * optionsBottoms.length)];
+
+            // console.log(optionsBottoms) 
 
         }
 
