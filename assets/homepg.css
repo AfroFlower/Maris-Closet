@@ -1,0 +1,12 @@
+.jumbotron{
+font-family: 'Playfair Display SC';
+color: darkslategray;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhfzhiQmyyTtlg1nTjkjisQQxkD9ZJg-QXvJyNdqipp1syFzOW");
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
+}
+.navbar{
+    font-family: 'Playfair Display SC';
+color: floralwhite;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mari's Closet</title>
+    <link rel="icon" href="https://media.istockphoto.com/vectors/tuxedo-logo-template-vector-id1159106145">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/homepg.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card mb">
+        <!-- <img src="pictures/hardwood.jpg" class="card-img-top" id="header" alt="hardwood"> -->
+</div>
+
+<nav class="navbar navbar-expand-lg navbar bg-dark text-white" id="navbar"> 
+   
+    <a class="navbar-brand text-white" id="title" href="#">Mari's Closet</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Your Room <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Your Wardrobe</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="#">Your Fit</a>
+        </li>                    
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="#">Essentials</a>
+            <a class="dropdown-item text-white" href="#">Insparation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-white" href="#">Local Help</a>
+            </div>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+        </form>
+    </div>
+          </nav>
+          <div class="container">
+          <div class="jumbotron">
+            <h1 class="display-4">Mari's Closet</h1>
+            <p class="lead">A New Way Of Expressing Your Style!</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+                <img src="https://i.pinimg.com/564x/49/06/34/4906348458d7bba8ef761425b3357cc9.jpg" class="card-img-top" alt="">
+                <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Your Room</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Store the way you express yourself!</h6>
+                    <p class="card-text">Keep track of your outfits, styles. Get dressed faster. Empress Easier.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://i.pinimg.com/564x/4d/21/07/4d2107922dd3c3f092255a6c8311dd07.jpg" class="card-img-top" alt="...">
+                <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Your Wardrobe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Collect Your Styles!</h6>
+                    <p class="card-text">Clean up your style by organizing your closet with our fashion expertise.</p>
+                </div>
+                </div>
+            </div> 
+            <div class="col-md-4">
+                <img src="https://i.pinimg.com/236x/fa/d4/5d/fad45d6e7b6816434a252c3d4788c180.jpg" class="card-img-top" alt="...">
+                <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Your Fit</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Show your style to the world!</h6>
+                    <p class="card-text">Let out team of designers put together an ensemble of statement making outfits for your next outing.</p>
+                </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+
+    </div>
+   
+    
+    <script>
+        
+        
+        // start loop
+        var div = $("<div>");
+            div.attr('class', "carousel-item active")
+         var  img = $("<img>")
+            img.attr('class', 'd-block col-3 img-fluid')
+            img.attr('src', arrayname[i].image)
+
+            div.append(img)
+            $('#caro').append(div)
+        // loop end 
+            
+    </script>
+    
+    
+    
+</body>
+</html>
