@@ -1,25 +1,32 @@
+// user would pick the chosenOccasion
+// casual, business, or formal
 var chosenOccasion = "casual";
+// the weather api function gives us the temp
 var temp = "hot";
-var rain = "yes";
+// the weather api function gives us whether or not it is raining
+var rain = "no";
 
+// to test the bottoms function we need a final shoe that has already been chosen for the outfit
 var finalShoe = {
 image: "picture",
 item: "shoe",
 occasion: "casual",
-wet: "yes",
+wet: "no",
 color: "yellow",
 neutral: false,  
 };
 
+// to test the bottoms function we need a final top that has already been chosen for the outfit
 var finalTop = {
 image: "picture",
 item: "shirt",
 occasion: "casual",
 length: "hot",
-color: "white",
+color: "yellow",
 neutral: true,
 };
 
+// each object is a different bottom.
 var a = {
 image: "picture",
 item: "bottom",
@@ -50,7 +57,7 @@ denim: false,
 var d = {
 image: "picture",
 item: "bottom",
-occasion: "casual",
+occasion: "formal",
 lengthhh: "cold",
 color: "black",
 neutral: true,
@@ -69,7 +76,7 @@ var f = {
 image: "picture",
 item: "bottom",
 occasion: "casual",
-lengthhh: "cold",
+lengthhh: "hot",
 color: "blue",
 neutral: false,
 denim: true,  
@@ -77,7 +84,7 @@ denim: true,
 var g = {
 image: "picture",
 item: "bottom",
-occasion: "formal",
+occasion: "casual",
 lengthhh: "hot",
 color: "yellow",
 neutral: false,
@@ -105,8 +112,8 @@ function outfitBottom () {
         // or the bottoms are a neutral color ... 
         || (usersBottoms[i].neutral === true))) {
 
-            // move matching bottoms to the options array
-            // (because all formal bottoms should be long)
+            // move matching formal bottoms to the options array
+            // (we are not checking weather because all formal bottoms lengthhh should be long)
             optionsBottoms.push(usersBottoms[i]);
 
             // randomly pick bottoms from options array
@@ -133,7 +140,8 @@ function outfitBottom () {
         // or the bottoms are jeans ...
         || (usersBottoms[i].denim === true))) {
 
-            // move matching bottoms to the options array
+            // move long bottoms to the options array
+            // (because user should wear long bottoms when it rainss)
             optionsBottoms.push(usersBottoms[i]);
 
             // randomly pick bottoms from options array
